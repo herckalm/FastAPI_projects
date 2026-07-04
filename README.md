@@ -24,15 +24,11 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 source $HOME/.local/bin/env
 2. Navigate to the Project Root Folder
 Bash
-# Ensure you enter the subfolder of the specific project
 cd ~/Desktop/aueb/FastAPI_projects/hero_api
 3. Create a Virtual Environment & Install Dependencies
 Bash
-# Create a Python 3.11 environment setting a local cache to prevent permission conflicts
 uv venv --python 3.11 --cache-dir .uv-cache
 source .venv/bin/activate
-
-# Install all required packages
 uv pip install -r requirements.txt --cache-dir .uv-cache
 4. Run Automated Test Cases
 Bash
