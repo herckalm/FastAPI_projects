@@ -13,26 +13,6 @@ Pytest: For executing automated test cases against a clean in-memory database en
 JWT (JSON Web Tokens): For secure registration, login flow, and role-based authentication (Users/Admins).
 
 uv: Modern, fast Python package manager for reliable environment and dependency management.
-
-Directory Structure
-Plaintext
-FastAPI_projects/
-├── .gitignore
-└── hero_api/            # Your application folder
-    ├── app/
-    │   ├── main.py      # App initialization and router inclusions
-    │   ├── db.py        # Engine configuration, table creation, and session helper
-    │   ├── security.py  # Password hashing utilities and JWT token generation
-    │   ├── models.py    # SQLModel data models and Pydantic validation schemas
-    │   ├── dependencies.py # Dependency injection for user identity and role verification
-    │   └── routers/     # Feature-specific endpoints split by domain
-    │       ├── auth.py
-    │       ├── heroes.py
-    │       └── missions.py
-    ├── tests/
-    │   └── test_api.py  # 7 automated end-to-end test cases with pytest
-    ├── requirements.txt # Project dependencies
-    └── README.md        # Documentation and guide
     
     
 Installation & Execution Guide on Ubuntu
